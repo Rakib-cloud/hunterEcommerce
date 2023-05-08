@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Dropdown, Nav, Navbar } from "react-bootstrap";
 
 import Container from 'react-bootstrap/Container';
@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Header.css'
 import { FaAlignLeft, FaAngleDown, FaAngleUp } from "react-icons/fa";
+
 
 const Header = () => {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -18,15 +19,29 @@ const Header = () => {
       setShowDropdown(false);
     };
 
+    const [navbarClass, setNavbarClass] = useState(" bg-white");
   
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+    
+    const handleScroll = () => {
+      if (window.pageYOffset > 0) {
+        setNavbarClass(" bg-white fixed-top");
+      } else {
+        setNavbarClass(" bg-white");
+      }
+    };
 
 
   return (
-   <div className='border-bottom'>
-          <div className="heads ">
-          <Container >
+   
+         <div className={navbarClass}>
+           <div className="heads  ">
+          <Container className="">
         <Row>
-        <Col xs={6} md={4} className=" header_content1" >
+        <Col xs={6} md={8} className=" header_content1 d-flex align_items-center">
         {/* <div >
       <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
        <FaAlignLeft />
@@ -43,21 +58,17 @@ const Header = () => {
     </div> */}
 
     <ul className="leftside-ul">
-     
      <li>
-      
-         <a href="#"> <span><FaAlignLeft className="lll" /> </span> Products <span><FaAngleDown className="ms-5 down"/> </span></a>
+         <p><span><FaAlignLeft size={22} className="lll" /> </span> Products <span><FaAngleDown size={22} className="ms-5 down"/> </span></p>
          <ul class="dropdown">
-             <li><a href="#">Laptops</a></li>
-             <li><a href="#">Monitors</a></li>
-             <li><a href="#">Printers</a></li>
+             <li>Laptops</li>
+             <li>Monitors</li>
+             <li>Printers</li>
          </ul>
      </li>
    
       </ul>
 
-        </Col>
-        <Col xs={6} md={4}>
         <Navbar className="navslist" >
         <Container >
           <Nav className="me-auto">
@@ -71,7 +82,9 @@ const Header = () => {
           </Nav>
         </Container>
       </Navbar>
+       
         </Col>
+       
         <Col xs={6} md={4}>
         <Navbar >
         <Container>
@@ -87,7 +100,7 @@ const Header = () => {
       </Row>
     </Container>
           </div>
-   </div>
+         </div>
   )
 }
 

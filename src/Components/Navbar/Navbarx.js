@@ -24,19 +24,19 @@ const Navbarx = () => {
 
 <ul className='list-inline mb-0 '>
     <li className='list-inline-item  '>
-    <TiSocialFacebook size={22} className="h-100 w-100 "/>
+    <TiSocialFacebook  />
     </li>
 
     <li className='list-inline-item  '>
-    <TiSocialInstagram size={22} />
+    <TiSocialInstagram />
     </li>
 
     <li className='list-inline-item '>
-    <TiSocialPinterest size={22} />
+    <TiSocialPinterest  />
     </li>
     
     <li className='list-inline-item  '>
-    <TiSocialTwitter size={22}/>
+    <TiSocialTwitter />
     </li>
    
 
@@ -86,22 +86,23 @@ const Navbarx = () => {
         
         </a>
         </Col>
-        <Col md="auto  " xs lg="4" className='d-flex hoo' >
+        <Col md="auto  " xs lg="4" className='d-flex justify-content-between hoo' >
         <div className="form-group mt-3 ">
       <input
         className="border-0 f_ship"
         type="text"
         placeholder="Product search"
       />
-      
     </div>
 
-    <DropdownButton id="dropdown-basic-button" title="Select Category" className='mt-3'>
+     <div className="d-flex align-items-center">
+     <DropdownButton id="dropdown-basic-button" title="Select Category" className='mt-3'>
       <Dropdown.Item href="#/action-1">Women</Dropdown.Item>
       <Dropdown.Item href="#/action-2">Men</Dropdown.Item>
       <Dropdown.Item href="#/action-3">children</Dropdown.Item>
     </DropdownButton>
-    <BsSearch className="mt-4 ms-2"/>
+     <h5> <BsSearch className="mt-4 ms-2"/></h5>
+     </div>
    
 </Col>
         <Col xs lg="2" className='d-flex mt-4 '>

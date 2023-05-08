@@ -10,18 +10,17 @@
     font-size: 13px;
     font-weight: 400;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
     margin-top:5px;
-    color:#777777;
+    color:#7777779f;
+    outline: red;
+   
 }
-input:focus {
- outline: 0;
-}
+
 .hoo{
   border-bottom: 0.5px solid #777777;
 }
 .hoo:hover{
-  border-bottom: 2px solid black;
+  /* border-bottom: 1.5px solid black; */
 }
 /* Style the button that will trigger the dropdown menu */
 .dropbtn {
