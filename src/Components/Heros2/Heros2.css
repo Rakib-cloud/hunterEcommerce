@@ -1,0 +1,53 @@
+.titles2{
+    font-size: 18px;
+    font-weight: 200;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    margin-top:5px;
+    color:#777777;
+}
+.titles{
+    font-size: 31px;
+    font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    margin-top:5px;
+    color:black;
+}
+.leftside{
+  background-image: url(https://thehanger.wp-theme.design/wp-content/uploads/para-bg-3.jpg);
+}
+
+@media (min-width: 425px) and (max-width: 575px) {
+.heroimg{
+  width: 70%;
+}
+.titles{
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+  margin-top:5px;
+  color:black;
+}
+.titles2{
+  font-size: 12px !important;
+  font-weight: 400;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+  margin-top:5px;
+  color:#777777;
+}
+.leftside{
+
+  width: 100%;
+}
+.leftside a{
+  text-decoration: none;
+  color:#777777;
+  
+}
+.heroimg{
+  margin-left: 50px;
+}
+  }

@@ -1,0 +1,97 @@
+.contact_number{
+    font-size: 13px;
+    font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5px;
+    margin-top:5px;
+    color:#777777;
+}
+.f_ship{
+    font-size: 13px;
+    font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    margin-top:5px;
+    color:#777777;
+}
+input:focus {
+ outline: 0;
+}
+.hoo{
+  border-bottom: 0.5px solid #777777;
+}
+.hoo:hover{
+  border-bottom: 2px solid black;
+}
+/* Style the button that will trigger the dropdown menu */
+.dropbtn {
+    color: #777777;
+    padding: 5px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover{
+    border-bottom: 2px solid #777777;
+    width: 75%;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #777777;
+  }
+
+ 
+
+  li a {text-decoration : none; color : #2d2f31;}
+
+
+ #dropdown-basic-button{
+    background-color: transparent;
+    color:#777777;
+    font-size: 13px;
+    border: none;
+ }
+
+ .responsive_nav{
+  display: none;
+ }
+
+
+@media (min-width: 425px) and (max-width: 575px) {
+  .responsive_nav{
+      display: block;
+      overflow: hidden;
+     
+  }
+ .respons ,.respons1{
+  display: none;
+ }
+ .small_logo{
+  margin-left: 60px;
+ }
+   
+  }
