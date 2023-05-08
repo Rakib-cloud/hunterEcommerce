@@ -38,24 +38,11 @@ const Header = () => {
   return (
    
          <div className={navbarClass}>
-           <div className="heads  ">
-          <Container className="">
+           <div className="heads border-bottom ">
+          <Container>
         <Row>
         <Col xs={6} md={8} className=" header_content1 d-flex align_items-center">
-        {/* <div >
-      <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-       <FaAlignLeft />
-        <span className="ms-5 f_content">Browse Categories</span>
-        <FaAngleDown className="ms-5"/>
-      </span>
-      {showDropdown && (
-        <ul className='list-block mt-5 catgory_list '>
-                <li><a href="#">Laptops</a></li>
-                <li><a href="#">Monitors</a></li>
-                <li><a href="#">Printers</a></li>
-        </ul>
-      )}
-    </div> */}
+        
 
     <ul className="leftside-ul">
      <li>
@@ -98,7 +85,7 @@ const Header = () => {
       </Navbar>
         </Col>
       </Row>
-    </Container>
+         </Container>
           </div>
          </div>
   )

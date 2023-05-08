@@ -9,7 +9,7 @@ const Slider = () => {
     setIndex(selectedIndex);
   };
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} className="h-50 border-top">
+    <Carousel activeIndex={index} onSelect={handleSelect} className="h-50 ">
       <Carousel.Item>
         <img
           className="d-block w-100 h-50"

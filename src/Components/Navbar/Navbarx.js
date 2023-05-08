@@ -119,11 +119,13 @@ const Navbarx = () => {
      <Navbar bg="light" expand={false}>  
   <Container fluid>  
 
-  <Navbar.Toggle aria-controls="offcanvasNavbar" />  
+  <Navbar.Toggle aria-controls="offcanvasNavbar" className="" />  
     <Navbar.Offcanvas  
       id="offcanvasNavbar"  
       aria-labelledby="offcanvasNavbarLabel"  
       placement="start"  
+      
+      
     >  
       <Offcanvas.Header closeButton>  
         <Offcanvas.Title id="offcanvasNavbarLabel">Womens Zone</Offcanvas.Title>  
@@ -150,7 +152,7 @@ const Navbarx = () => {
             className="me-2"  
             aria-label="Search"  
           />  
-          <BsSearchHeart className='mt-2'/>
+          <BsSearch size={25} className='mt-2'/>
         </Form>  
 
         <Navbar >
@@ -199,8 +201,8 @@ const Navbarx = () => {
    
 
    <div className='mr-5'>
-            <FaRegUser className='ms-4'/>
-              <FaRegHeart className='ms-3'/>
+            <FaRegUser size={22} className='ms-4'/>
+              <FaRegHeart size={22} className='ms-3'/>
    </div>
 
   
