@@ -10,6 +10,7 @@ import Products from './Components/Products/Products';
 import Services from './Components/Services/Services';
 import Footer from './Components/Footer/Footer';
 import Navbarx from './Components/Navbar/Navbarx';
+import Responsive from './Components/Responsive/Responsive';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
     <div >
       <Navbarx/>
       <Header/>
-      <Slider/> 
+      {/* <Slider/> 
        <Heros/>
       <Heros2/>
       
@@ -30,7 +31,7 @@ function App() {
       <Heros/>
 
       <Services/>
-<Footer/>
+<Footer/> */}
 
     </div>
   );

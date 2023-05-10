@@ -16,14 +16,7 @@
    
 }
 
-.hoo{
-  border-bottom: 0.5px solid #777777;
-}
-.navbar-toggler{
- outline: none !important;
- border: none !important;
- opacity: 0.5;
-}
+
 /* Style the button that will trigger the dropdown menu */
 .dropbtn {
     color: #777777;
@@ -77,22 +70,12 @@
     border: none;
  }
 
- .responsive_nav{
-  display: none;
- }
 
 
-@media (min-width: 425px) and (max-width: 575px) {
-  .responsive_nav{
-      display: block;
-      overflow: hidden;
-     
-  }
- .respons ,.respons1{
-  display: none;
- }
- .small_logo{
-  margin-left: 60px;
- }
+
+ @media (min-width: 425px) and (max-width: 575px) {
+       .navbar_res_null{
+        display: none;
+       }
    
   }
